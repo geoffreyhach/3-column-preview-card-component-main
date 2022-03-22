@@ -1,0 +1,127 @@
+
+/* ===========
+   LAYOUT
+=========== */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color:hsl(0, 0%, 95%);
+}
+
+section {
+    display : flex;
+    flex-direction: column;
+    justify-content : space-around;
+    padding: 40px;
+    min-width: 180px;
+    max-width: 180px;
+    height: 350px;
+
+}
+
+section:nth-child(1) {
+    background-color:  hsl(31, 77%, 52%);
+    border-radius: 5px 0px 0px 5px;
+}
+
+section:nth-child(2) {
+    background-color: hsl(184, 100%, 22%);
+}
+
+section:nth-child(3) {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 5px 5px 0px;
+}
+
+/* ===========
+    TYPOGRAPHY
+=========== */
+
+h1 {
+   font-family: 'Big Shoulders Display', cursive;
+   color :hsl(0, 0%, 95%);
+   font-size: 2.4rem;
+   padding : 0;
+   margin: 0;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    color : hsla(0, 0%, 100%, 0.75);
+    padding : 0;
+    margin: 0;
+}
+
+.btn {
+    font-family:  'Lexend Deca', sans-serif;
+    text-decoration: none;
+    font-size: 0.9rem;  
+    box-sizing: content-box;
+    background-color:hsl(0, 0%, 95%);
+    border-radius: 40px;
+    border: 2px solid transparent;
+    padding : 0.8rem 2rem;
+    max-width: 45%;   
+}
+
+/* ===========
+    ELEMENTS
+=========== */
+
+img {
+    width: 60px;
+}
+
+.btn:hover {
+    background-color: transparent;
+    border : 2px solid hsl(0, 0%, 95%);
+}
+
+section:nth-child(1) .btn {
+    color: hsl(31, 77%, 52%);
+}
+section:nth-child(1) .btn:hover {
+    color: hsl(0, 0%, 95%);
+}
+section:nth-child(2) .btn {
+    color:  hsl(184, 100%, 22%);
+}
+section:nth-child(2) .btn:hover {
+    color: hsl(0, 0%, 95%);
+}
+section:nth-child(3) .btn {
+    color: hsl(179, 100%, 13%);
+}
+section:nth-child(3) .btn:hover {
+    color: hsl(0, 0%, 95%);
+}
+
+
+
+/* ===========
+    MEDIA QUERIES
+=========== */
+
+@media screen and (max-width:480px)
+{
+    main {
+        flex-direction: column;
+        height: 100%;
+        padding : 50px 0px;
+    }
+    section {
+        min-height: 300px;
+    }
+    section:nth-child(1) {
+        border-radius: 5px 5px 0px 0px;
+    }
+    section:nth-child(3) {
+        border-radius: 0px 0px 5px 5px;
+    }
+    
+    
+}
